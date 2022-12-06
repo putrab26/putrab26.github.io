@@ -48,13 +48,13 @@
       <img src="img/Picsart_22-11-19_23-40-58-907.jpg" alt="Logo Unit 8Gold" width="200" class="rounded-circle img-thumbnail" data-aos="zoom-out-left" />
       <h1 class="display-4" style="font-size: 40px" data-aos="zoom-out" data-aos-duration="1200">AFHRIEZA HERYAWAN DWI SAPUTRA</h1>
       <p class="lead">GAMER | EDITOR</p>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,256L288,32L576,256L864,160L1152,96L1440,160L1440,320L1152,320L864,320L576,320L288,320L0,320Z"></path></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#434343" fill-opacity="1" d="M0,128L288,160L576,32L864,128L1152,224L1440,224L1440,320L1152,320L864,320L576,320L288,320L0,320Z"></path></svg>
     </section>
     <!-- Akhir Jumbotron -->
 
     <!-- About -->
     <section id="about">
-      <div class="container">
+      <div class="container" style="color: white;">
         <div class="row text-center mb-3">
           <div class="col">
             <h2>ABOUT ME</h2>
@@ -76,13 +76,13 @@
 
     <!-- Projects -->
     <section id="projects" style="background-color: #d8fdf2;">
-      <div class="container">
+      <div class="container ">
         <div class="row text-center mb-3">
           <div class="col">
             <h2>MY PROJECTS</h2>
           </div>
         </div>
-        <div class="row">
+        <div class="row radius">
           <div class="col-md-4 mb-3">
             <div class="card" data-aos="zoom-in-up" data-aos-duration="500">
               <img src="img/projects/1.jpg" class="card-img-top" alt="Foto Gaming 1" />
@@ -109,12 +109,12 @@
           </div>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,32L205.7,256L411.4,160L617.1,256L822.9,128L1028.6,288L1234.3,128L1440,224L1440,320L1234.3,320L1028.6,320L822.9,320L617.1,320L411.4,320L205.7,320L0,320Z"></path></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#434343" fill-opacity="1" d="M0,64L288,32L576,224L864,224L1152,64L1440,224L1440,320L1152,320L864,320L576,320L288,320L0,320Z" class="shadow p-3 mb-5 bg-body rounded"></path></svg>
     </section>
     <!-- Akhir Projects -->
 
     <!-- Contact -->
-    <section id="contact">
+    <section id="contact" style="color: white;">
       <div class="container md-3">
         <div class="row text-center" data-aos="zoom-in" data-aos-duration="1000">
           <div class="col">
@@ -130,15 +130,15 @@
             <form name="putra_port-contact-form">
               <div class="mb-3">
                 <i class="bi bi-card-text"></i> <label for="name" class="form-label">NAMA LENGKAP</label>
-                <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" />
+                <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" placeholder="NAMA LENGKAP" />
               </div>
               <div class="mb-3">
                 <i class="bi bi-envelope-fill"></i> <label for="email" class="form-label">EMAIL</label>
-                <input type="email" class="form-control" id="email" aria-describedby="email" name="email" />
+                <input type="email" class="form-control" id="email" aria-describedby="email" name="email" placeholder="EMAIL" />
               </div>
               <div class="mb-3">
                 <i class="bi bi-calendar2-minus-fill"></i> <label for="pesan" class="form-label">PESAN</label>
-                <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
+                <textarea class="form-control" id="pesan" rows="3" name="pesan" placeholder="ISIKAN PESANMU"></textarea>
               </div>
               <button type="submit" class="btn btn-success btn-gradient btn-kirim">KIRIM <i class="bi bi-send"></i></button>
               <button class="btn btn-primary btn-loading d-none" type="button" disabled>
@@ -155,7 +155,7 @@
 
     <!-- Footer -->
     <footer class="text-white text-center pb-5 .bg-gradient" style="background-color: #00bb92">
-      <p>CREATED BY <i class="bi bi-instagram"></i> <a href="https://www.instagram.com/putra_264a" class="text-white fw-bold">PUTRA</a></p>
+      <p><i class="bi bi-c-circle"></i> CREATED BY <i class="bi bi-instagram"></i> <a href="https://www.instagram.com/putra_264a" class="text-white fw-bold">PUTRA</a></p>
     </footer>
     <!-- Akhir Footer -->
 
@@ -191,6 +191,12 @@
           })
           .catch((error) => console.error("Error!", error.message));
       });
+
+      // Tombol Dark Mode
+      function ubahMode(){
+        const ubah = document.body;
+        ubah.classList.toggle('dark');
+      }
     </script>
   </body>
 </html>
